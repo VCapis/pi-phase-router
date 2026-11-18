@@ -1,0 +1,22 @@
+{
+  "name": "pi-phase-router",
+  "version": "0.1.0",
+  "description": "Modelo virtual para o Pi Coding Agent que usa um modelo diferente em cada etapa da sessão (primeira resposta, trabalho, compactação, pós-compactação).",
+  "type": "module",
+  "private": true,
+  "keywords": ["pi-package"],
+  "license": "MIT",
+  "repository": "github:VCapis/pi-phase-router",
+  "pi": {
+    "extensions": ["./src/index.ts"]
+  },
+  "scripts": {
+    "test": "node --test test/*.test.ts"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "engines": {
+    "node": ">=22.18"
+  }
+}
